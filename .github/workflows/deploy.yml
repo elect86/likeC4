@@ -44,6 +44,12 @@ jobs:
         with:
           path: ./dist
 
+      - name: Debug dist
+        run: |
+          echo "DIST CONTENT:"
+          ls -la dist
+
+
   # Deployment job
   deploy-pages:
     environment:
