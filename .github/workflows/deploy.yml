@@ -35,7 +35,7 @@ jobs:
 
       - name: build
         run: |
-          bunx likec4@latest build \
+          bunx likec4@latest build likec4 \
             --base "${{ steps.pages.outputs.base_path || '/' }}" \
             --output dist
 
